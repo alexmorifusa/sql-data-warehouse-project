@@ -103,11 +103,11 @@ BEGIN
         PRINT '>> Load Duration: ' + CAST(DATEDIFF(second, @start_time, @end_time) AS NVARCHAR) + ' seconds';
 
         SET @start_time = GETDATE();
-        PRINT '>> Truncating Table: bronze.erp_px_car_g1v2';
-        TRUNCATE TABLE bronze.erp_px_car_g1v2;
+        PRINT '>> Truncating Table: bronze.erp_px_cat_g1v2';
+        TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 
-        PRINT '>> Inserting Data Into: bronze.erp_px_car_g1v2';
-        BULK INSERT bronze.erp_px_car_g1v2
+        PRINT '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
+        BULK INSERT bronze.erp_px_cat_g1v2
         FROM 'C:\Users\amori\Downloads\sql-data-warehouse-project\sql-data-warehouse-project\datasets\source_erp\PX_CAT_G1V2.csv'
         WITH (
             FIRSTROW = 2,
