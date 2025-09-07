@@ -4,13 +4,13 @@
 This repository demonstrates the end-to-end process of building a Data Warehouse (DWH) using SQL. The project covers planning, architecture, ETL pipeline development, and data modeling with a layered approach (Bronze → Silver → Gold).
 
 ## Project Overview
-•	Planned and documented requirements using Notion and Draw.io. 
-•	Designed a multi-layer data architecture (Bronze, Silver, Gold). 
-•	Implemented ETL pipelines with SQL scripts and stored procedures. 
-•	Built a Star Schema model for analytics. 
-•	Version controlled all work with Git.
++ Planned and documented requirements using Notion and Draw.io.
++ Designed a multi-layer data architecture (Bronze, Silver, Gold).
++ Implemented ETL pipelines with SQL scripts and stored procedures.
++ Built a Star Schema model for analytics.
++ Version controlled all work with Git.
 
-## Architevture and Diagrams
+## Architecture and Diagrams
 ### Data Warehouse Architecture
 <p center="align">
   <img width="1051" height="561" alt="DataWarehouse drawio" src="https://github.com/user-attachments/assets/9370ce41-c1da-4f43-9029-abfa83e18755" />
@@ -32,3 +32,8 @@ This flow chart illustrates how data moves through the pipeline: from raw ingest
 
 This star schema shows the Sales Fact table linked to Dimension tables (Customers and Products). It enables efficient querying for business KPIs such as sales by customer, region, or product category.
 
+## Skills and Tools Demonstrated
++ SQL Development: DDL, DML, Stored Procedures
++ Data Warehouse Design: Layered architecture, ETL pipelines
++ Data Modeling: Facts, Dimensions, Star Schema
++ Documentation & Planning: Notion, Draw.io, Git
